@@ -19,14 +19,25 @@ header
 	line-height:5rem
 	margin:auto
 	margin-left:0
-	height:5rem
+	height:5.01rem
 	width:20rem
 	text-align:center
 	background-color:#fff
 	border-bottom:1px solid #B2DFDB
+	
+	img
+		margin-top:0.5rem
+		width:9rem
+		height:9rem
+		border-radius:50%
+		border:2px solid #B2DFDB
+		box-shadow:2px 2px 3px rgba(0,0,0,.3), -2px 2px 3px rgba(0,0,0,.3)
+		z-index:99
+		position:relative
 
 nav 
 	//@extend .flex
+	justify-content: center
 	margin:auto
 	ul
 		@extend .flex
@@ -37,7 +48,7 @@ nav
 		list-style: none
 
 		li
-			justify-content: flex-start
+			
 			align-items: flex-start
 			line-height: 3rem
 			text-align: center
@@ -63,6 +74,7 @@ aside
 	ul
 		@extend .flex
 		flex-direction: column
+		padding-top:4rem
 
 		li 
 			width: 20rem
@@ -70,9 +82,15 @@ aside
 			text-align: center
 			line-height: 5rem
 			color:#212121
+			text-transform:uppercase
+			font-weight: 700
+			font-family: arial
+			font-size: 0.7rem
+			text-shadow: 1px 0px 2px rgba(0,0,0,.3)
 
 		li:hover
 			background-color:#B2DFDB
+			
 
 //Main content
 
