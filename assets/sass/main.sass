@@ -1,32 +1,34 @@
 //Sass File
 @import "reset.sass"
+//@import "breakpoints.sass"
 
 .flex
 	display:flex
 body
 	background-color:#FAFAFA
 
+
 header
 	@extend .flex
 	align-content: center
 	position:fixed
-	height:5rem
+	height:4rem
 	background-color:#009688
-	box-shadow: 2px 2px 5px rgba(0,0,0,.5)
+	box-shadow:0 2px 5px rgba(0,0,0,0.26)
 	width:100%
 
 .logo
-	line-height:5rem
+	//line-height:5rem
 	margin:auto
 	margin-left:0
-	height:5.01rem
-	width:20rem
+	height:4.01rem
+	width:15rem
 	text-align:center
 	background-color:#fff
 	border-bottom:1px solid #B2DFDB
 	
 	img
-		margin-top:0.5rem
+		margin-top:5rem
 		width:9rem
 		height:9rem
 		border-radius:50%
@@ -38,7 +40,7 @@ header
 nav 
 	//@extend .flex
 	justify-content: center
-	margin:auto
+	margin-left:15rem
 	ul
 		@extend .flex
 		
@@ -48,9 +50,7 @@ nav
 		list-style: none
 
 		li
-			
-			align-items: flex-start
-			line-height: 3rem
+			line-height: 4rem
 			text-align: center
 			width:10rem
 			height:3rem
@@ -60,9 +60,14 @@ nav
 				text-decoration: none
 				text-transform: uppercase
 				color:#fff
-
+.title
+	color:#000
+	position:fixed
+	top:0.5rem
+	left:1rem
+	z-index:1
 aside
-	width:20rem
+	width:15rem
 	height:58rem
 	border-right:1px solid #B2DFDB
 	//border-top:2px solid #B2DFDB
@@ -74,10 +79,10 @@ aside
 	ul
 		@extend .flex
 		flex-direction: column
-		padding-top:4rem
+		padding-top:11.1rem
 
 		li 
-			width: 20rem
+			width: 15rem
 			height: 5rem
 			text-align: center
 			line-height: 5rem
@@ -90,13 +95,37 @@ aside
 
 		li:hover
 			background-color:#B2DFDB
+		a
+			display: block
+			text-decoration: none
+			color:#212
 			
 
 //Main content
 
 .maincontent 
-	height:90rem
+	height:auto
+	display:flex
+	flex-direction:column
 		
 	article
 		padding-top: 9rem
 		margin: 0 8rem 0 25rem
+
+@media (max-width: 1200px)
+	.maincontent article
+		margin:0 3rem 0 18rem
+	nav ul li 	
+		width:5rem
+		
+
+@media (max-width: 700px)
+	aside
+		display: none
+	.title
+		display: none
+	.maincontent article
+		margin:0 1.8rem 0 1.8rem
+	nav
+		display: none
+
