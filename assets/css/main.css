@@ -1,0 +1,88 @@
+/* line 1, C:/Users/Gentry/Documents/GitHub/Jade-With-polymer/assets/sass/reset.sass */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+/* line 3, C:/Users/Gentry/Documents/GitHub/Jade-With-polymer/assets/sass/main.sass */
+.flex, header, nav ul, aside ul {
+  display: flex; }
+
+/* line 5, C:/Users/Gentry/Documents/GitHub/Jade-With-polymer/assets/sass/main.sass */
+body {
+  background-color: #FAFAFA; }
+
+/* line 8, C:/Users/Gentry/Documents/GitHub/Jade-With-polymer/assets/sass/main.sass */
+header {
+  align-content: center;
+  position: fixed;
+  height: 5rem;
+  background-color: #009688;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  width: 100%; }
+
+/* line 17, C:/Users/Gentry/Documents/GitHub/Jade-With-polymer/assets/sass/main.sass */
+.logo {
+  line-height: 5rem;
+  margin: auto;
+  margin-left: 0;
+  height: 5rem;
+  width: 20rem;
+  text-align: center;
+  background-color: #fff;
+  border-bottom: 1px solid #B2DFDB; }
+
+/* line 27, C:/Users/Gentry/Documents/GitHub/Jade-With-polymer/assets/sass/main.sass */
+nav {
+  margin: auto; }
+  /* line 29, C:/Users/Gentry/Documents/GitHub/Jade-With-polymer/assets/sass/main.sass */
+  nav ul {
+    flex-flow: row nowrap;
+    padding: 0;
+    margin: 0;
+    list-style: none; }
+    /* line 37, C:/Users/Gentry/Documents/GitHub/Jade-With-polymer/assets/sass/main.sass */
+    nav ul li {
+      justify-content: flex-start;
+      align-items: flex-start;
+      line-height: 3rem;
+      text-align: center;
+      width: 10rem;
+      height: 3rem;
+      list-style-type: none; }
+      /* line 46, C:/Users/Gentry/Documents/GitHub/Jade-With-polymer/assets/sass/main.sass */
+      nav ul li a {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #fff; }
+
+/* line 51, C:/Users/Gentry/Documents/GitHub/Jade-With-polymer/assets/sass/main.sass */
+aside {
+  width: 20rem;
+  height: 58rem;
+  border-right: 1px solid #B2DFDB;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0; }
+  /* line 60, C:/Users/Gentry/Documents/GitHub/Jade-With-polymer/assets/sass/main.sass */
+  aside ul {
+    flex-direction: column; }
+    /* line 64, C:/Users/Gentry/Documents/GitHub/Jade-With-polymer/assets/sass/main.sass */
+    aside ul li {
+      width: 20rem;
+      height: 5rem;
+      text-align: center;
+      line-height: 5rem;
+      color: #212121; }
+    /* line 71, C:/Users/Gentry/Documents/GitHub/Jade-With-polymer/assets/sass/main.sass */
+    aside ul li:hover {
+      background-color: #B2DFDB; }
+
+/* line 75, C:/Users/Gentry/Documents/GitHub/Jade-With-polymer/assets/sass/main.sass */
+.maincontent {
+  height: 90rem; }
+  /* line 78, C:/Users/Gentry/Documents/GitHub/Jade-With-polymer/assets/sass/main.sass */
+  .maincontent article {
+    padding-top: 9rem;
+    margin: 0 8rem 0 25rem; }
