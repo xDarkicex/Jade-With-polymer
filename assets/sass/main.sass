@@ -36,6 +36,17 @@ header
 		box-shadow:2px 2px 3px rgba(0,0,0,.3), -2px 2px 3px rgba(0,0,0,.3)
 		z-index:99
 		position:relative
+#menu
+	width:9rem
+	display:none
+
+	img
+		top:1.5rem
+		left:1.5rem
+		position:fixed
+		width:1.5rem
+		z-index: 99
+
 
 nav 
 	//@extend .flex
@@ -116,7 +127,7 @@ aside
 	.maincontent article
 		margin:0 3rem 0 18rem
 	nav ul li 	
-		width:5rem
+		width:8rem
 		
 
 @media (max-width: 700px)
@@ -128,4 +139,6 @@ aside
 		margin:0 1.8rem 0 1.8rem
 	nav
 		display: none
+	#menu
+		display:block
 
