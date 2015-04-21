@@ -8,8 +8,9 @@ html(lang="en")
 		meta(name='author', content='Gentry Rolofson')
 		link(rel="icon", type="image/ico", href="favicon.ico")
 		link(href='assets/css/main.css', rel='stylesheet' type='text/css')
-		link(href='assets/bower_components/polymer/polymer.html', rel='import')
-		link(href='http://fonts.googleapis.com/css?family=Raleway:400,700', rel='stylesheet', type='text/css')
+		link(href='assets/css/material.css', rel='stylesheet', type='text/css')
+		//link(href='assets/bower_components/polymer/polymer.html', rel='import')
+		//link(href='http://fonts.googleapis.com/css?family=Raleway:400,700', rel='stylesheet', type='text/css')
 		link(href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,600,800', rel='stylesheet', type='text/css')
 	body
 		div(class="wrapper")
@@ -36,7 +37,7 @@ html(lang="en")
 			div(class="title")
 				h1 alphaparser.io
 			div(id="menu")
-				button( onclick="toggle('slidemenu')", class="slidebutton")
+				button( onclick="toggle('slidemenu')", class="slidebutton", "material")
 				//img(src="assets/images/baricons.png")
 			aside
 				div(class="logo")
@@ -96,6 +97,7 @@ html(lang="en")
 					section(class="footercontent")
 						div(class="footercenter")
 		script(src="assets/js/slide.js")
+		script(src="assets/js/ripple.js")
 
 
 
