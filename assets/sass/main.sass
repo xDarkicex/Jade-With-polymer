@@ -50,18 +50,19 @@ header
 		border:none
 		background:url('../images/baricons-1.png')
 #slidemenu
-	position:absolute
+	position:fixed
 	height:0px
 	width:100%
 	background:#FAFAFA
 	top:4rem
 	overflow:hidden;
 	z-index:10000;
+	box-shadow:0 2px 5px rgba(0,0,0,0.26)
 	transition: height 0.3s linear 0s;
 	ul
 		@extend .flex
 		flex-direction: column
-		padding-top:5rem
+		padding-top:0rem
 
 		li 
 			width: 100%
@@ -76,7 +77,7 @@ header
 			text-shadow: 1px 0px 2px rgba(0,0,0,.3)
 
 		li:hover
-			background-color:#B2DFDB
+			background-color:#00695C
 		a
 			display: block
 			text-decoration: none
@@ -86,6 +87,7 @@ nav
 	//@extend .flex
 	justify-content: center
 	margin-left:15rem
+	margin-right:4rem
 	ul
 		@extend .flex
 		
@@ -109,9 +111,11 @@ nav
 	color:#000
 	text-shadow: 1px 0px 2px rgba(0,0,0,.3)
 	position:fixed
-	top:0.5rem
-	left:1rem
+	top:0.8rem
+	left:0.5rem
 	z-index:1
+	h1
+		font-size: 1.6rem
 aside
 	width:15rem
 	height:58rem
@@ -145,7 +149,22 @@ aside
 			display: block
 			text-decoration: none
 			color:#212
-			
+
+.lastchild
+	margin-bottom:9rem
+
+.sidefooter
+	width:100%
+	text-align:center
+	border-top:1px solid #B2DFDB
+	padding-top:2rem
+	a 
+		text-decoration:none
+
+footer
+	height:4rem
+	margin-top:5rem
+	background-color:#263238	
 
 //Main content
 
@@ -156,24 +175,23 @@ aside
 		
 	article
 		padding-top: 9rem
-		margin: 0 8rem 0 25rem
+		margin: 0 8rem 0 18rem
 
 @media (max-width: 1200px)
 	.maincontent article
-		margin:0 3rem 0 18rem
-	nav ul li 	
-		width:8rem
-		
-
-@media (max-width: 700px)
+		margin:0 3rem 0 3rem
+	#menu
+		display:block
 	aside
 		display: none
 	.title
 		display: none
-	.maincontent article
-		margin:0 1.8rem 0 1.8rem
 	nav
 		display: none
-	#menu
-		display:block
+@media (max-width: 700px)
+
+	.maincontent article
+		margin:0 1.8rem 0 1.8rem
+
+
 

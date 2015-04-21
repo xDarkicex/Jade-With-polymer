@@ -2,12 +2,13 @@ doctype
 
 html(lang="en")
 	head
-		title Jade practice
+		title AlphaParser
 		meta( charset='utf-8')
 		meta(name='viewport', content='width=device-width, initial-scale=1.0')
 		meta(name='author', content='Gentry Rolofson')
 		link(href='assets/css/main.css', rel='stylesheet' type='text/css')
 		link(href='assets/bower_components/polymer/polymer.html', rel='import')
+		link(href='http://fonts.googleapis.com/css?family=Raleway:400,700', rel='stylesheet', type='text/css')
 		link(href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,600,800', rel='stylesheet', type='text/css')
 	body
 		div(class="wrapper")
@@ -30,7 +31,7 @@ html(lang="en")
 						li
 							a(href="#") I am a New Link
 			div(class="title")
-				h1 WEB DESIGN
+				h1 alphaparser.io
 			div(id="menu")
 				button( onclick="toggle('slidemenu')", class="slidebutton")
 				//img(src="assets/images/baricons.png")
@@ -46,8 +47,14 @@ html(lang="en")
 						a(href="#text") text 
 					li 
 						a(href="#is") is
-					li 
+					li(class="lastchild")
 						a(href="#test") a test
+				section(class="sidefooter")
+					div
+						p AlphaParser.io © 2015
+						br 
+						a(href="mailto:xdarkicex@gmail.com") contact
+
 						//Dont Forget to put your footer here!!!
 			div(id="slidemenu")
 				ul
@@ -82,7 +89,9 @@ html(lang="en")
 					h1 This is a title
 					p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil impedit soluta, voluptatum velit magni quidem accusantium iusto error mollitia, aperiam optio quo eum ipsam dolorem non autem ad unde tempore.Aliquid expedita aspernatur excepturi autem tenetur! Sit deleniti quia repudiandae, nam amet temporibus doloribus cumque totam eaque eum sequi illum esse vitae incidunt libero ab! Nulla odio saepe eos quod!Nostrum expedita ea ad nihil saepe voluptatibus quisquam iusto nulla, nobis quasi provident excepturi quaerat. Et earum consequuntur dolor eius iusto vero nulla repudiandae consequatur ratione labore, perspiciatis sunt molestias.Corporis voluptatem eaque, quam ullam, ipsam earum temporibus veniam aspernatur voluptatum aliquam distinctio! Voluptates incidunt ipsa tempore laudantium voluptatum architecto impedit aliquid vero dolor laborum. Sint laboriosam eos voluptatum quasi.		
 
-			footer
+				footer
+					section(class="footercontent")
+						div(class="footercenter")
 		script(src="assets/js/slide.js")
 
 
