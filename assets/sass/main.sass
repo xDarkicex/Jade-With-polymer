@@ -17,26 +17,43 @@ header
 	background-color:#009688
 	box-shadow:0 2px 5px rgba(0,0,0,0.26)
 	width:100%
-
-.logo
-	//line-height:5rem
-	margin:auto
-	margin-left:0
-	height:4.01rem
+aside
 	width:15rem
-	text-align:center
+	height:58rem
+	border-right:1px solid #B2DFDB
+	//border-top:2px solid #B2DFDB
 	background-color:#fff
-	border-bottom:1px solid #B2DFDB
-	
+	position:fixed
+	top:4rem
+	left:-15rem
+	text-align:center
+	transition: left 0.3s linear 0s;
 	img
-		margin-top:5rem
+		margin-top:2rem
 		width:9rem
 		height:9rem
 		border-radius:50%
 		border:2px solid #B2DFDB
 		box-shadow:2px 2px 3px rgba(0,0,0,.3), -2px 2px 3px rgba(0,0,0,.3)
 		z-index:99
-		position:relative
+#desktop-menu:hover ~ aside
+	left:0
+
+
+aside:hover
+	left:0
+
+.maintitle
+	@extend .flex
+	height:2rem
+	width:10rem
+	position:relative
+	margin:auto
+	line-height:4rem
+	p 
+		color:#fff
+		font-size: 1.6rem
+		text-transform: uppercase
 
 .titletag
 	@extend .flex
@@ -55,6 +72,30 @@ header
 		color:#fff
 		font-size: 1.6rem
 		text-transform: uppercase
+#desktop-menu
+	height:4rem
+	width:9rem
+	display:block
+
+	.desktop-button
+		top:1.3rem
+		left:1.5rem
+		position:fixed
+		width:2rem
+		height:4rem
+		overflow: hidden
+		background:none
+		background-repeat:no-repeat
+		z-index: 99
+		border:none
+		background-image:url('../images/baricons-1.png')
+
+	.desktop-button:active
+		outline:none
+		border:none
+	.desktop-button:focus
+		outline: none
+
 #menu
 	width:9rem
 	display:none
@@ -85,7 +126,7 @@ header
 	z-index:10000;
 	box-shadow:0 2px 5px rgba(0,0,0,0.26)
 	transition: height 0.3s linear 0s;
-	display:none
+	
 	ul
 		@extend .flex
 		flex-direction: column
@@ -111,31 +152,12 @@ header
 			display: block
 			text-decoration: none
 			color:#212
+#menu:hover ~ #slidemenu
+	height:400px
 
-nav 
-	//@extend .flex
-	justify-content: center
-	margin-left:15rem
-	margin-right:4rem
-	ul
-		@extend .flex
-		
-		flex-flow: row nowrap
-		padding:0
-		margin:0
-		list-style: none
+#slidemenu:hover
+	height:400px
 
-		li
-			line-height: 4rem
-			text-align: center
-			width:10rem
-			height:3rem
-			list-style-type:none
-
-		a
-			text-decoration: none
-			text-transform: uppercase
-			color:#fff
 .title
 	color:#000
 	text-shadow: 1px 0px 2px rgba(0,0,0,.3)
@@ -146,19 +168,10 @@ nav
 	h1
 		font-size: 1.6rem
 aside
-	width:15rem
-	height:58rem
-	border-right:1px solid #B2DFDB
-	//border-top:2px solid #B2DFDB
-	background-color:#fff
-	position:fixed
-	top:0
-	left:0
-
 	ul
 		@extend .flex
 		flex-direction: column
-		padding-top:11.1rem
+		padding-top:2rem
 
 		li 
 			
@@ -191,6 +204,7 @@ aside
 	height:4rem
 
 .sidefooter
+	height:100%
 	width:100%
 	text-align:center
 	border-top:1px solid #B2DFDB
@@ -211,8 +225,16 @@ footer
 	flex-direction:column
 		
 	article
+		
 		padding-top: 9rem
-		margin: 0 8rem 0 18rem
+		margin: 0 8rem 0 4rem
+		transition: margin-left 0.3s linear 0s,  margin-top 0.3s linear 0s;
+		
+#desktop-menu:hover ~ .maincontent article
+	margin:0 8rem 0 18rem
+
+aside:hover ~ .maincontent article
+	margin:0 8rem 0 18rem
 
 @media (max-width: 1200px)
 	.maincontent article
@@ -227,8 +249,16 @@ footer
 		display: none
 	.titletag
 		display: flex
+	.maintitle
+		display: none
 	#slidemenu
 		display: block
+	#desktop-menu
+		display:none
+	#menu:hover ~ .maincontent article
+		margin:21rem 3rem 0 3rem
+	#slidemenu:hover ~ .maincontent article
+		margin:21rem 3rem 0 3rem
 @media (max-width: 700px)
 
 	.maincontent article
